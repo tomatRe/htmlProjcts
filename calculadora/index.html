@@ -1,0 +1,20 @@
+<!doctype <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="calc.css" rel="stylesheet">
+    <script src="calc.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <table>
+        <tr> <td colspan="4" id="result" class="result"></td> </tr>
+        <tr> <td onclick="add('7')">7</td> <td onclick="add('8')">8</td> <td onclick="add('9')">9</td> <td class="operators" onclick="add('+')">+</td> </tr>
+        <tr> <td onclick="add('4')">4</td> <td onclick="add('5')">5</td> <td onclick="add('6')">6</td> <td class="operators" onclick="add('-')">-</td> </tr>
+        <tr> <td onclick="add('1')">1</td> <td onclick="add('2')">2</td> <td onclick="add('3')">3</td> <td class="operators" onclick="add('*')">*</td> </tr>
+        <tr> <td colspan="2" onclick="add('0')">0</td> <td class="operators" onclick="add('.')">.</td> <td class="operators">/</td></tr>
+        <tr> <td class="ac" colspan="2" onclick="setResult('0')">AC</td> <td colspan="2" class="operators" onclick="calc()">=</td> </tr>
+    </table>
+</body>
+</html>

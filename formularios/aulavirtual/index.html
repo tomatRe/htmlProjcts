@@ -1,0 +1,34 @@
+<!doctype <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="alumno.css" rel="stylesheet">
+    <title>Proyectos Angel</title>
+</head>
+<body>
+    
+        <form action="https://iessanvicente.com/aulavirtual/login/index.php" method="post" id="login"  >
+            <div class="loginform">
+              <div class="form-label"><label for="username">Username</label></div>
+              <div class="form-input">
+                <input type="text" name="username" id="username" size="15" value="" />
+              </div>
+              <div class="form-label"><label for="password">Password</label></div>
+              <div class="form-input">
+                <input type="password" name="password" id="password" size="15" value=""  />
+              </div>
+            </div>
+                    <div class="rememberpass">
+                    <input type="checkbox" name="rememberusername" id="rememberusername" value="1"  />
+                    <label for="rememberusername">Remember username</label>
+            </div>
+            <input id="anchor" type="hidden" name="anchor" value="" />
+            <script>document.getElementById('anchor').value = location.hash</script>
+            <input type="submit" id="loginbtn" value="Log in" />
+            <div class="forgetpass"><a href="forgot_password.php">Forgotten your username or password?</a></div>
+          </form>
+
+    <br>
+    <a href="../index.html">Volver al inicio</a>
+</body>

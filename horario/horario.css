@@ -1,0 +1,30 @@
+table{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100%;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 42;
+}
+
+td{
+    background-color: darkslateblue;
+    color: white;
+}
+
+.dias{
+    background-color: darkblue;
+    color: white;
+}
+
+.patio{
+    background-color: deepskyblue;
+    color: white;
+}
+
+.empty{
+    background-color: deepskyblue;
+}
