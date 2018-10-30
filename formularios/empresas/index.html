@@ -1,0 +1,150 @@
+<!doctype <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="empresas.css" rel="stylesheet">
+    <title>Proyectos Angel</title>
+</head>
+
+<body>
+    <form name="form1" action="/empresas/solicitudalumnos.php" method="post" onsubmit="javascript:return ValidateForm(this)">
+
+        <table>
+          <tr>
+            <td>Empresa</td>
+            <td><input type="text" name="nombre"  size="40" class="form-control" required /></td>
+          </tr>
+          <tr>
+            <td>Actividad</td>
+            <td><input type="text" name="actividad" size="30"  class="form-control" required /></td>
+          </tr>
+          <tr>
+            <td>CIF</td>
+            <td><input type="text" name="cif" class="form-control"/></td>    
+          <tr>
+            <td>Domicilio</td>
+            <td><input type="text" name="domicilio"  size="40"  class="form-control" /></td>
+          </tr>
+          <tr>
+            <td>CP</td>
+            <td><input type="text" name="cp"  size="6" value = "03690"  class="form-control" /></td>
+          </tr>
+          <tr>
+            <td>Localidad</td>
+            <td><input type="text" name="localidad"  size="30" value="San Vicente del Raspeig"  class="form-control" required /></td>
+          </tr>
+          <tr>
+            <td>Tlf</td>
+            <td><input type="text" name="tlf"  size="15"  class="form-control" /></td>
+          </tr>
+          <tr>
+            <td>Fax</td>
+            <td><input type="text" name="fax"  size="15"   class="form-control"/></td>
+          </tr>
+          <tr>
+            <td>E-mail</td>
+            <td><input type="text" name="email"  size="35"  class="form-control" /></td>      
+          </tr>
+          <tr>
+            <td>Página web</td>
+            <td><input type="text" name="web"  size="70"  class="form-control" /></td>      
+          </tr>
+          <tr>
+            <td>Persona de contacto</td>
+            <td><input type="text" name="contacto"  class="form-control" /></td>
+          </tr>
+          <tr>
+            <td>Móvil del contacto</td>
+            <td><input type="text" name="movil"  class="form-control" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td>Titularidad</td>
+            <td valign="top"><input type="radio" name="empresaPrivada" value="empresaPublica" /> &nbsp; Pública<br />
+              <input type="radio" name="empresaPrivada" value="empresaPrivada"  checked /> &nbsp; Privada<br />
+            </td>
+          </tr>
+        </table>
+        <p>Solicita alumnos de:</p>
+        <p></p>
+        <table border="1">
+          <tbody>
+            <tr>
+              <td>Ciclo formativo<br />
+              </td>
+              <td>Nº de alumnos<br />
+              </td>
+            </tr>
+            <tr>
+              <td>GRADO MEDIO GESTIÓN ADMINISTRATIVA <br />
+              </td>
+              <td><input type="text" name="cantidadGA"  size="2"  class="form-control" /><br />
+              </td>
+            </tr>
+            <tr>
+              <td>GRADO MEDIO SISTEMAS MICROINFORMÁTICOS Y REDES<br />
+              </td>
+              <td><input type="text" name="cantidadSMR"  size="2"  class="form-control" /><br />
+                <br />
+              </td>
+            </tr>
+            <tr>
+              <td>GRADO SUPERIOR ADMINISTRACIÓN Y FINANZAS <br />
+              </td>
+              <td><input type="text" name="cantidadAF"  size="2"  class="form-control" /><br />
+                <br />
+              </td>
+            </tr>
+            <tr>
+              <td>GRADO SUPERIOR ADMINISTRACIÓN DE SISTEMAS INFORMÁTICOS EN RED<br />
+              </td>
+              <td><input type="text" name="cantidadASIR"  size="2"  class="form-control" /><br />
+                <br />
+              </td>
+            </tr>
+            <tr>
+              <td>GRADO SUPERIOR DESARROLLO DE APLICACIONES MULTIPLATAFORMA <br />
+              </td>
+              <td><input type="text" name="cantidadDAM"  size="2"  class="form-control" /><br />
+                <br />
+              </td>
+            </tr>
+            <tr>
+              <td>GRADO SUPERIOR DESARROLLO DE APLICACIONES WEB <br />
+              </td>
+              <td><input type="text" name="cantidadDAW"  size="2"  class="form-control" /><br />
+                <br />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Para: <br />
+            <input type="radio" name="practTrabajo" value="practicas"  checked /> &nbsp; Prácticas<br />
+            <input type="radio" name="practTrabajo" value="trabajo"  /> &nbsp; Trabajo<br />
+        </p>
+        
+        <p>Horario de trabajo / prácticas <input type="text" name="horario" class="form-control" /><br /></p>
+        <p>Tipo de contrato (si procede) <input type="text" name="contrato" class="form-control"/></p>
+        <p><input type="checkbox" name="vehiculo" /> &nbsp; ¿Necesita vehículo propio? <br />
+        <input type="checkbox" name="carnet" /> &nbsp; ¿Necesita carné de conducir? </p>
+        <p>Perfil del alumno y posibles tareas a desarrollar en el puesto de
+          trabajo</p>
+        <p><textarea name="tareas" cols="60" rows="5" class="form-control"></textarea><br />
+        </p>
+        
+        <p><input type="checkbox" name="incluirLogo"  /> &nbsp; ¿Desea que incluyamos su logotipo y 
+          un enlace a su página web en el apartado de "empresas colaboradoras" de nuestra web?</p>
+          
+         <p> Introduzca la suma de 1 y 3: <input type="text" name="operacion"  size="5" class="form-control"/></p>
+         <p><input type="submit" name="Enviar" value="Enviar solicitud" /> 
+         <br />
+        </p> 
+          
+      </form>
+      
+    
+    <br>
+    <a href="../index.html">Volver</a>
+
+</body>
